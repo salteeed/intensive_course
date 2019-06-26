@@ -14,4 +14,5 @@
 #  args: ['-c', 'pwd; ls -arl; cd /workspace; pwd; ls -arl; cd /; ls -alr;']
 - name: gcr.io/cloud-builders/docker
   args: ['build', '-t', 'gcr.io/skcchysk/github.com/salteeed/intensive_course:$BUILD_ID', '.']
+  dir: '/workspace'
 images: ['gcr.io/skcchysk/github.com/salteeed/intensive_course:$BUILD_ID']
