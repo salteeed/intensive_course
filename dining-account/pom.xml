@@ -6,6 +6,7 @@
 
 	<artifactId>dining-account</artifactId>
 	<name>dining-account</name>
+	<version>0.0.1-SNAPSHOT</version>
 
 	<parent>
 		<groupId>com.sk.sample</groupId>
