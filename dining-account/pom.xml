@@ -20,6 +20,11 @@
 			<version>1.4.7.RELEASE</version>
 		</dependency>
 	</dependencies>
+
+	<properties>
+		<docker.image.prefix>intensive_course</docker.image.prefix>
+	</properties>
+
 	<build>
 		<plugins>
 			<plugin>
