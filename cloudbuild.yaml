@@ -6,7 +6,7 @@
 #images: ['gcr.io/$PROJECT_ID/spring-boot']
 #steps:
 - name: 'ubuntu'
-  args: ['sh', '-c', 'while true; echo hello; do sleep 1000; done;']
+  args: ['sh', '-c', 'pwd;ls -arl;']
 - name: gcr.io/cloud-builders/docker
   args: ['build', '-t', 'gcr.io/skcchysk/github.com/salteeed/intensive_course', '.']
 images: ['gcr.io/skcchysk/github.com/salteeed/intensive_course']
