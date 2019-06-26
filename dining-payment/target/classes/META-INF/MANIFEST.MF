@@ -3,7 +3,7 @@ Implementation-Title: dining-payment
 Implementation-Version: 0.0.1-SNAPSHOT
 Built-By: SKCC
 Implementation-Vendor-Id: com.sk.sample
-Build-Jdk: 1.8.0_211
+Build-Jdk: 1.8.0_202
 Implementation-URL: https://projects.spring.io/spring-boot/dining/dini
  ng-payment/
 Created-By: Maven Integration for Eclipse

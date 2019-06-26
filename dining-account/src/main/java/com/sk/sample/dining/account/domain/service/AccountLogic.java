@@ -2,7 +2,7 @@ package com.sk.sample.dining.account.domain.service;
 
 import java.util.List;
 
-import org.springframework.beans.BeanUtils;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -23,17 +23,17 @@ public class AccountLogic implements AccountService {
 		return accountRepository.findOne(id);
 	}
 
-	@Override
-	@Transactional(readOnly=true)
-	public List<Account> findByNameLike(String name) {
-		return accountRepository.findByNameLike(name);
-	}
-
-	@Override
-	@Transactional(readOnly=true)
-	public Account findByEmail(String email) {
-		return accountRepository.findByEmail(email);
-	}
+//	@Override
+//	@Transactional(readOnly=true)
+//	public List<Account> findByNameLike(String name) {
+//		return accountRepository.findByNameLike(name);
+//	}
+//
+//	@Override
+//	@Transactional(readOnly=true)
+//	public Account findByEmail(String email) {
+//		return accountRepository.findByEmail(email);
+//	}
 	
 	@Override
 	@Transactional(readOnly=true)
@@ -53,22 +53,40 @@ public class AccountLogic implements AccountService {
 	public Account register(Account account) {
 		return accountRepository.save(account);
 	}
-
-	@Override
-	@Transactional
-	public Account update(Long id, Account newAccount) {
-		Account oldAccount = accountRepository.findOne(id);
-		if(oldAccount != null) {
-			BeanUtils.copyProperties(newAccount,  oldAccount, "id");
-			return accountRepository.save(oldAccount);
-		} else {
-			return null;
-		}
-	}
+//
+//	@Override
+//	@Transactional
+//	public Account update(Long id, Account newAccount) {
+//		Account oldAccount = accountRepository.findOne(id);
+//		if(oldAccount != null) {
+//			BeanUtils.copyProperties(newAccount,  oldAccount, "id");
+//			return accountRepository.save(oldAccount);
+//		} else {
+//			return null;
+//		}
+//	}
 
 	@Override
 	@Transactional
 	public void delete(Long id) {
 		accountRepository.delete(id);
+	}
+
+	@Override
+	public List<Account> findByNameLike(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Account findByEmail(String email) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Account update(Long id, Account account) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }

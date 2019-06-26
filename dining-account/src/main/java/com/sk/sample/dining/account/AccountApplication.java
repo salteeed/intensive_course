@@ -1,20 +1,18 @@
 package com.sk.sample.dining.account;
 
-import java.util.List;
-
-import org.springframework.beans.factory.annotation.Qualifier;
+//import java.util.List;
+//
+//import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
-import com.querydsl.core.types.Predicate;
-import com.sk.sample.dining.account.domain.model.Account;
-import com.sk.sample.dining.account.domain.model.MemberType;
-import com.sk.sample.dining.account.domain.model.MembershipLevelType;
+//import com.querydsl.core.types.Predicate;
+//import com.sk.sample.dining.account.domain.model.Account;
 import com.sk.sample.dining.account.domain.repository.AccountRepository;
-import com.sk.sample.dining.account.domain.service.AccountService;
-import com.sk.sample.dining.shared.domain.Address;
+//import com.sk.sample.dining.account.domain.service.AccountService;
+//import com.sk.sample.dining.shared.domain.Address;
 
 @SpringBootApplication
 public class AccountApplication {
