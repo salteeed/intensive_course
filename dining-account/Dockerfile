@@ -1,5 +1,5 @@
 FROM openjdk:8-jdk-alpine
-COPY ./dining-account/target/dining-account-0.0.1-SNAPSHOT.jar /app.jar
+COPY ./target/dining-account-0.0.1-SNAPSHOT.jar /app.jar
 #ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
 EXPOSE 11001 
 ENTRYPOINT ["java","-jar","/app.jar"]

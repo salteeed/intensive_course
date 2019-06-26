@@ -13,6 +13,6 @@
   entrypoint: '/bin/sh'
   args: ['-c', 'pwd; ls -arl; cd ./dining-account; pwd; ls -arl; cd ./target/; pwd; ls -arl; cd /workspace;']
 - name: gcr.io/cloud-builders/docker
-  args: ['build', '-t', 'gcr.io/skcchysk/intensive_course/dining-account:$BUILD_ID', './dining-account/']
-  dir: '/workspace'
+  args: ['build', '-t', 'gcr.io/skcchysk/intensive_course/dining-account:$BUILD_ID', '/workspace/dining-account/']
+  dir: '/workspace/dining-account/'
 images: ['gcr.io/skcchysk/intensive_course/dining-account:$BUILD_ID']
