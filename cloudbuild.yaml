@@ -1,5 +1,7 @@
 ﻿steps:
 - name: 'gcr.io/cloud-builders/mvn'
+  args: ['clean']
+- name: 'gcr.io/cloud-builders/mvn'
   args: ['package']
 #- name: 'gcr.io/cloud-builders/docker'
 #  args: ['build', '--tag=gcr.io/$PROJECT_ID/spring-boot', '.']
@@ -12,4 +14,5 @@
   args: ['-c', 'pwd; ls -arl; cd /workspace; pwd; ls -arl; cd /; ls -alr;']
 - name: gcr.io/cloud-builders/docker
   args: ['build', '-t', 'gcr.io/skcchysk/github.com/salteeed/intensive_course:$BUILD_ID', '.']
+  dir: '/'
 images: ['gcr.io/skcchysk/github.com/salteeed/intensive_course:$BUILD_ID']
