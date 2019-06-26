@@ -30,7 +30,7 @@
 		<module>dining-shared</module>
 		<module>dining-product</module>
 		<module>dining-order</module>
-		<module>dining-payment</module>
+<!-- 		<module>dining-payment</module>  -->
 		<module>dining-delivery</module>
 		<module>dining-menu</module>
 		<module>dining-review</module>
