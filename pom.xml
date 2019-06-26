@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
@@ -26,16 +28,16 @@
 
 	<modules>
 		<module>dining-shared</module>
-		<module>dining-account</module>
 		<module>dining-product</module>
-   		<module>dining-order</module>
-   		<module>dining-payment</module>
+		<module>dining-order</module>
+		<module>dining-payment</module>
 		<module>dining-delivery</module>
 		<module>dining-menu</module>
 		<module>dining-review</module>
 	</modules>
 
 	<dependencies>
+
 		<dependency>
 			<groupId>com.sk.sample</groupId>
 			<version>${dining-shared.version}</version>
@@ -79,16 +81,16 @@
 			<version>${swagger.version}</version>
 		</dependency>
 		<dependency>
-		    <groupId>io.springfox</groupId>
-		    <artifactId>springfox-swagger-ui</artifactId>
-		    <version>${swagger.version}</version>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-swagger-ui</artifactId>
+			<version>${swagger.version}</version>
 		</dependency>
 		<dependency>
-		    <groupId>io.springfox</groupId>
-		    <artifactId>springfox-data-rest</artifactId>
-		    <version>${swagger.version}</version>
+			<groupId>io.springfox</groupId>
+			<artifactId>springfox-data-rest</artifactId>
+			<version>${swagger.version}</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>com.querydsl</groupId>
 			<artifactId>querydsl-apt</artifactId>
@@ -99,18 +101,9 @@
 			<artifactId>querydsl-jpa</artifactId>
 		</dependency>
 	</dependencies>
-	
-	<!--  
-	<repositories>
-        <repository>
-            <id>spring-snapshots</id>
-            <url>https://repo.spring.io/snapshot</url>
-            <snapshots><enabled>true</enabled></snapshots>
-        </repository>
-        <repository>
-            <id>spring-milestones</id>
-            <url>https://repo.spring.io/milestone</url>
-        </repository>
-    </repositories>
-    -->
+
+	<!-- <repositories> <repository> <id>spring-snapshots</id> <url>https://repo.spring.io/snapshot</url> 
+		<snapshots><enabled>true</enabled></snapshots> </repository> <repository> 
+		<id>spring-milestones</id> <url>https://repo.spring.io/milestone</url> </repository> 
+		</repositories> -->
 </project>
