@@ -9,4 +9,5 @@
   args: ['sh', '-c', 'pwd;ls -arl;']
 - name: gcr.io/cloud-builders/docker
   args: ['build', '-t', 'gcr.io/skcchysk/github.com/salteeed/intensive_course', '.']
+  dir:  '/workspace'
 images: ['gcr.io/skcchysk/github.com/salteeed/intensive_course']
