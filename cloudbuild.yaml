@@ -9,9 +9,9 @@
 #steps:
 - name: 'ubuntu'
   args: ['sh', '-c', 'pwd;ls -arl;']
-- name: gcr.io/cloud-builders/docker
-  entrypoint: '/bin/sh'
-  args: ['-c', 'pwd; ls -arl; cd /workspace; pwd; ls -arl; cd /; ls -alr;']
+#- name: gcr.io/cloud-builders/docker
+#  entrypoint: '/bin/sh'
+#  args: ['-c', 'pwd; ls -arl; cd /workspace; pwd; ls -arl; cd /; ls -alr;']
 - name: gcr.io/cloud-builders/docker
   args: ['build', '-t', 'gcr.io/skcchysk/github.com/salteeed/intensive_course:$BUILD_ID', '.']
 images: ['gcr.io/skcchysk/github.com/salteeed/intensive_course:$BUILD_ID']
