@@ -7,6 +7,6 @@
 #  args: ['build', '--tag=gcr.io/$PROJECT_ID/spring-boot', '.']
 #images: ['gcr.io/$PROJECT_ID/spring-boot']
 #steps:
-#- name: gcr.io/cloud-builders/docker
-  #args: ['build', '-t', 'gcr.io/skcchysk/github.com/salteeed/intensive_course', '.']
-#images: ['gcr.io/skcchysk/github.com/salteeed/intensive_course']
+- name: gcr.io/cloud-builders/docker
+  args: ['build', '-t', 'gcr.io/skcchysk/github.com/salteeed/intensive_course', '.']
+images: ['gcr.io/skcchysk/github.com/salteeed/intensive_course']
