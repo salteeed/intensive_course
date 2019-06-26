@@ -11,7 +11,7 @@
   args: ['sh', '-c', 'pwd;ls -arl;']
 - name: gcr.io/cloud-builders/docker
   entrypoint: '/bin/sh'
-  args: ['-c', 'pwd; ls -arl; cd dining-account/target/; pwd; ls -arl; cd /workspace;']
+  args: ['-c', 'pwd; ls -arl; cd ./dining-account; pwd; ls -arl; cd ./target/; pwd; ls -arl; cd /workspace;']
 - name: gcr.io/cloud-builders/docker
   args: ['build', '-t', 'gcr.io/skcchysk/github.com/salteeed/intensive_course:$BUILD_ID', '.']
   dir: '/workspace'
