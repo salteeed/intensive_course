@@ -1,0 +1,18 @@
+﻿steps:
+- name: 'gcr.io/cloud-builders/mvn'
+  args: ['clean']
+- name: 'gcr.io/cloud-builders/mvn'
+  args: ['package']
+#- name: 'gcr.io/cloud-builders/docker'
+#  args: ['build', '--tag=gcr.io/$PROJECT_ID/spring-boot', '.']
+#images: ['gcr.io/$PROJECT_ID/spring-boot']
+#steps:
+- name: 'ubuntu'
+  args: ['sh', '-c', 'pwd;ls -arl;']
+- name: gcr.io/cloud-builders/docker
+  entrypoint: '/bin/sh'
+  args: ['-c', 'pwd; ls -arl; cd ./dining-account; pwd; ls -arl; cd ./target/; pwd; ls -arl; cd /workspace;']
+- name: gcr.io/cloud-builders/docker
+  args: ['build', '-t', 'gcr.io/skcchysk/intensive_course/dining-account:$BUILD_ID', '/workspace/dining-account/']
+  dir: '/workspace/dining-account/'
+images: ['gcr.io/skcchysk/intensive_course/dining-account:$BUILD_ID']
