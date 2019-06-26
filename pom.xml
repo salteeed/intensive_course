@@ -27,6 +27,7 @@
 	</properties>
 
 	<modules>
+		<module>dining-account</module>
 		<module>dining-shared</module>
 		<module>dining-product</module>
 		<module>dining-order</module>
