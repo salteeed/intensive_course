@@ -1,9 +1,6 @@
-server:  
-  port: 8083
-  
 spring:
   application: 
-    name: account-service 
+    name: pay-service 
   
   profiles:
     active: 
