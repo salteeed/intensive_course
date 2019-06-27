@@ -1,6 +1,3 @@
-server:  
-  port: 8083
-  
 spring:
   application: 
     name: account-service 
@@ -39,3 +36,12 @@ eureka:
     enabled: true
   instance:
     preferIpAddress: true
+
+zuul:  
+  # service will be mapped under /api uri  
+  prefix: /api  
+  routes: 
+    stock-service:  
+      path: /account-service/**  
+      url: http://dining-account-pjmxazipaa-uc.a.run.app
+    
