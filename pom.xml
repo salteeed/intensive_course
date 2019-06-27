@@ -32,6 +32,7 @@
 		<module>dining-menu</module>
 		<module>dining-review</module>
 		<module>dining-eureka</module>
+		<module>dining-pay</module>
 	</modules>
 
 	<dependencies>
