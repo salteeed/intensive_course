@@ -41,7 +41,7 @@ zuul:
   # service will be mapped under /api uri  
   prefix: /api  
   routes: 
-    stock-service:  
+    account-service:  
       path: /account-service/**  
       url: http://dining-account-pjmxazipaa-uc.a.run.app
     
