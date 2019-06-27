@@ -32,7 +32,7 @@ eureka:
   client:
     registerWithEureka: true
     serviceUrl:
-      defaultZone: http://localhost/eureka/
+      defaultZone: https://dining-eureka-pjmxazipaa-uc.a.run.app/eureka/
     enabled: true
   instance:
     preferIpAddress: true
