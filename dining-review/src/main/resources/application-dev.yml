@@ -5,7 +5,9 @@ spring:
     console:
       enabled: true
       path: /h2-console
-   
+      settings:
+        web-allow-others: true
+        
   datasource:
     url: jdbc:h2:mem:menu
     driverClassName: org.h2.Driver
